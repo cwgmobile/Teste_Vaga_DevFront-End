@@ -4,3 +4,4 @@
 * Criação de pastas e arquivos para início do Projeto Carros Velozes
 * Tratamento e edição de Imagens necessárias para o Projeto.
 # Criação dos primeiros Arquivos.
+* Criado o fundo animado adptado junto ao menu responsivo com auxilio de javascript,css.
