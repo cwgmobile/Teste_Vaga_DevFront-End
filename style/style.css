@@ -1,49 +1,123 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-body{
+body,html{
+
+	padding: 0;
     margin: 0;
-    padding: 0;
+
 }
-.carouselExampleFade{
-    margin-top:180px;
+.container-fluid{
+	width: 100vw;
+	height:100vh;
+	background-image: url(../img/bg02.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	animation: slide 10s infinite;   
 }
 .filtro{
     width: 100vw;
 	height: 100vh;
-	background-color: #0c0c0cc4;
+	background-color: #000000d0;
+	background-size: cover;
 	position: absolute;
-	top: 85;
-	left: 0;  
-}
-.container-fluid{
-    width: 100vw;
-    height: 100vh;
-    background-image: url(../img/camarobg.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    animation: slide 15s infinite;
-    
+	top:85;
+	left:0;  
 }
 @keyframes slide {
 	
 	4%{
-	    background-image: url(../img/lamborguinebg.jpg);
+	    background-image: url(../img/bg01.jpg);
 	}
 	33%{
-		background-image: url(../img/teslabg.jpg);
+		background-image: url(../img/bg03.jpg);
 	}
 	67%{
-		background-image: url(../img/camarobg.jpg);
+		background-image: url(../img/bg02.jpg);
 	}				
+}	
+.row {
+	top:150px;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+    background-color:rgba(0, 0, 0, 0);
+	border-radius:20px;
 }
-.row{
-    background-color:rgba(0, 0, 0, 0.383);
+h1.main-title{
+	font-family: 'Raleway', sans-serif;
+	padding-bottom:20px;
+	display: flex;
+	text-align:center;
+	align-items:center;
+	justify-content: center;
+	font-size:30px;
+	font-weight: 600;
+	color:darkorange;	
 }
-h3 {
- font-size: 15px;
- color: white;
- font-family: 'Raleway', sans-serif;
-}
-.header{
-    position:absolute;
-}
+.card-img-top{
+	display: flex;
+	align-items: center;
+	justify-content: center;
 
+}
+.card-img-bottom{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.card-title#up{	
+	font-family: 'Raleway', sans-serif;	
+	font-weight: 300;
+	color:darkorange;
+	text-transform: uppercase;	
+}
+.card-title#low{
+	text-align: left;	
+	font-family: 'Raleway', sans-serif;	
+	font-weight: 300;
+	color:darkorange;
+	text-transform: uppercase;	
+}
+.card-text#textoL{
+	font-family: 'Raleway', sans-serif;
+	color:white;	
+	font-size:15px;
+	margin: 5px 5px 0 0 ;
+}
+.card-text#textoD{
+	font-family: 'Raleway', sans-serif;
+	color:white;	
+	font-size:15px;
+}
+.card{
+	background: transparent;
+	border:none;
+	margin-bottom: 50px;
+}
+#share{
+	display:flex;
+	align-items: center;
+	position: fixed left;
+	justify-content: left;
+	margin-left: 15px;
+	width:25px;
+	color:darkorange;
+	cursor: pointer;
+}
+h3{
+	font-weight: 300;
+	font-size: 20px;
+	margin: 10px;
+	font-family: 'Raleway', sans-serif;	
+	color: darkorange;
+	display: grid;
+}
+.row#rodape{
+	background:transparent;
+	padding-top:50px;
+	display: flex;
+	position:relative;
+	display: flex;
+}
