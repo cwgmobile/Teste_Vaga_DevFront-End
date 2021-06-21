@@ -12,4 +12,4 @@
 * Criação de estilo responsivo.
 * Slides Bootstrap.
 * adicionando ícones no código.Search e share.
-
+# Codificando parte Responsiva do projeto.
