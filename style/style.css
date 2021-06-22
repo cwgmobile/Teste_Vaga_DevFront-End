@@ -8,7 +8,7 @@ body,html{
     margin: 0;
 	width: 100vw;
 	height: 100vh;
-	background-image:linear-gradient(rgba(0, 0, 0, 0.863),rgba(0, 0, 0, 0.863)),url(../img/bg03.jpg);
+	background-image:url(../img/bg03.jpg);
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-attachment: fixed;
@@ -16,9 +16,22 @@ body,html{
 	-o-background-size: cover;
 	-moz-background-size: cover;
 	background-size: cover;
+	animation: slide 10s infinite;
 	
 }
+@keyframes slide {
 
+	4%{
+		
+	    background-image: url(../img/bg01.jpg);
+	}
+	33%{
+		background-image: url(../img/bg03.jpg);
+	}
+	67%{
+		background-image: url(../img/bg02.jpg);
+	}				
+}
 .container-fluid{
 	width: 100%;
 	height:100%;
