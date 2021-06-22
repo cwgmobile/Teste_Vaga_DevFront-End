@@ -23,13 +23,13 @@ body,html{
 
 	4%{
 		
-	    background-image: url(../img/bg01.jpg);
+	    background-image: url(../img/bg03.jpg);
 	}
 	33%{
-		background-image: url(../img/bg03.jpg);
+		background-image: url(../img/bg02.jpg);
 	}
 	67%{
-		background-image: url(../img/bg02.jpg);
+		background-image: url(../img/bg01.jpg);
 	}				
 }
 .container-fluid{
