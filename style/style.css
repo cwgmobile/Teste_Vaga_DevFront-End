@@ -8,7 +8,7 @@ body,html{
     margin: 0;
 	width: 100vw;
 	height: 100vh;
-	background-image: url(../img/bg02.jpg);
+	background-image: linear-gradient(rgba(0, 0, 0, 0.568),rgba(0, 0, 0, 0.568)), url(../img/bg02.jpg);
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-attachment: fixed;
@@ -18,30 +18,17 @@ body,html{
 	background-size: cover;
 	animation: slide 10s infinite;	
 }
-.color-overlay {
-	width: 100vw;
-	height: 100vh;
-	background-position: center;
-	background: rgba(0, 0, 0, 0.856);
-	opacity: .9;
-	position: absolute;
-	-webkit-background-size: cover;
-	-o-background-size: cover;
-	-moz-background-size: cover;
-	background-size: cover;
-	top:85;
-	left:0;
-  }
+
 @keyframes slide {
 	
 	4%{
-	    background-image: url(../img/bg01.jpg);
+	    background-image:linear-gradient(rgba(0, 0, 0, 0.568),rgba(0, 0, 0, 0.568)), url(../img/bg01.jpg);
 	}
 	33%{
-		background-image: url(../img/bg03.jpg);
+		background-image:linear-gradient(rgba(0, 0, 0, 0.568),rgba(0, 0, 0, 0.568)), url(../img/bg03.jpg);
 	}
 	67%{
-		background-image: url(../img/bg02.jpg);
+		background-image:linear-gradient(rgba(0, 0, 0, 0.568),rgba(0, 0, 0, 0.568)), url(../img/bg02.jpg);
 	}				
 }
 .container-fluid{
