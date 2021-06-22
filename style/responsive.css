@@ -1,68 +1,55 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @media (max-width: 600px) {
-    body{
-     padding: 0;
-     margin: 0;
-     background-image:url(../img/bg01.jpg);
-     background-repeat: no-repeat;
-     background-size: cover;
-     background-position: center;
-     background-attachment: fixed;
-     animation: slide 10s infinite;  
-    }
-    .filtro{
-      padding: 0;
-      margin: 0;
-      width: 100vw;
-      height: 100vh;
-      background-color:rgba(0, 0, 0, 0.897);
-      background-size: cover;
-      position: absolute;
-      background-repeat:no-repeat;
-      background-attachment:fixed;   
-    }
-
-    @keyframes slide {
-  
-      4%{
-          background-image: url(../img/bg01.jpg);
-      }
-      33%{
-        background-image: url(../img/bg03.jpg);
-      }
-      67%{
-        background-image: url(../img/bg02.jpg);
-      }				
-    }
-  
+  body,html{
+    padding: 0;
+    margin: 0;
+    overflow:scroll; 
+  }
     .container-fluid{
-      width:100%;
-      height:100%;
+      width:100vw;
+      height:100vh;
     }
     #mainSlider{
       margin-left:5px;
       margin-right:5px;
     }
     h1.main-title{
-      margin-bottom:10px;
-      font-size:25px; 
+      font-family: 'Raleway', sans-serif;
+      display: flex;
+      text-align:center;
+      justify-content: left;
+      font-size:20px;
+    }
+    #slide-carro{
+      padding-bottom: 20px;
     }
     .card{
       background: transparent;
       border:none;
-      margin-bottom: 10px;
+      margin-bottom:15px;
     }
     .card-text#textoL{
-      text-align: center;
-      margin-left: 10px;
-      margin-right: 10px;
-      font-size: 12px;
+      text-align: left;
+      font-size: 15px;
     }
     .card-text#textoD{
-      text-align: center;
-      margin-left: 10px;
-      margin-right: 10px;
-      font-size: 12px;
+      text-align: left;
+      padding-top: 10px;
+      font-size: 15px;
+    }
+    .card-title#up{	
+      text-align: left;
+      font-family: 'Raleway', sans-serif;	
+      font-weight: 300;
+      color:darkorange;
+      text-transform: uppercase;	
+    }
+    .card-title#low{
+      text-align: left;	
+      font-family: 'Raleway', sans-serif;	
+      font-weight: 300;
+      color:darkorange;
+      text-transform: uppercase;	
     }
     #menu {
       display: block;
@@ -126,7 +113,18 @@
       transform: rotate(-135deg);
       top:-4px;
     }
+    .header {
+      background: #050505fd;
+    }
     .iconPesquisa{
       display:none;
     }
+    .row#rodape{
+      position:relative;
+      align-items: center;
+      justify-content:center;
+      padding-top: 50px;
+      padding-left:40px;
+      
   }
+} 

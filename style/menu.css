@@ -9,7 +9,7 @@ ul {
 }
 
 .iconPesquisa{
-  margin-right: 15px;
+  margin-right:40px;
   width: 25px;
   color:#ff8c00;
   cursor: pointer;
@@ -37,7 +37,7 @@ a:hover {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: #05050500;
+  background: #05050502;
   position: fixed;
   z-index: 1;
 }

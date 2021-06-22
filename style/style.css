@@ -1,15 +1,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+margin: 0;
+padding: 0;
+}
 body,html{
 	padding: 0;
-    margin: 0; 
+    margin: 0;
+	width: 100vw;
+	height: 100vh;
 	background-image: url(../img/bg02.jpg);
 	background-repeat: no-repeat;
-	background-position: center;
+	background-position: center center;
 	background-attachment: fixed;
+	-webkit-background-size: cover;
+	-o-background-size: cover;
+	-moz-background-size: cover;
 	background-size: cover;
-	animation: slide 10s infinite;
-	
+	animation: slide 10s infinite;	
 }
+.color-overlay {
+	width: 100vw;
+	height: 100vh;
+	background-position: center;
+	background: rgba(0, 0, 0, 0.856);
+	opacity: .9;
+	position: absolute;
+	-webkit-background-size: cover;
+	-o-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	top:85;
+	left:0;
+  }
 @keyframes slide {
 	
 	4%{
@@ -23,46 +45,37 @@ body,html{
 	}				
 }
 .container-fluid{
-	width: 100vw;
-	height:100vh;
-}
-.filtro{
-	overflow: hidden;
-    width: 100vw;
-	height: 100vh;
-	background-color:rgba(0, 0, 0, 0.787);
-	background-position: center;
-	background-size: cover;
-	position: absolute;
-	top:85;
-	left:0;  
+	width: 100%;
+	height:100%;
 }
 .row {
-	top:150px;
+	top:120px;
 	bottom: 100px;
+	padding: 25px 25px 25px 25px;
 	position: relative;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-    background-color:rgba(0, 0, 0, 0);
 	border-radius:20px;
 }
 h1.main-title{
 	font-family: 'Raleway', sans-serif;
-	padding-bottom:20px;
 	display: flex;
 	text-align:center;
-	align-items:center;
-	justify-content: center;
+	justify-content: left;
 	font-size:30px;
 	font-weight: 600;
 	color:darkorange;	
+}
+#slide-carro{
+	padding-bottom: 150px;
+
 }
 .card-img-top{
 	display: flex;
 	align-items: center;
 	justify-content: center;
-
+	margin-top: 20px;
 }
 .card-img-bottom{
 	display: flex;
@@ -71,14 +84,14 @@ h1.main-title{
 }
 .card-title#up{	
 	font-family: 'Raleway', sans-serif;	
-	font-weight: 300;
+	font-weight: 400;
 	color:darkorange;
 	text-transform: uppercase;	
 }
 .card-title#low{
 	text-align: left;	
 	font-family: 'Raleway', sans-serif;	
-	font-weight: 300;
+	font-weight: 400;
 	color:darkorange;
 	text-transform: uppercase;	
 }
@@ -92,11 +105,12 @@ h1.main-title{
 	font-family: 'Raleway', sans-serif;
 	color:white;	
 	font-size:15px;
+	margin: 5px 5px 0 0 ;
 }
 .card{
 	background: transparent;
 	border:none;
-	margin-bottom: 50px;
+	margin-bottom:50px;
 }
 #share{
 	display:flex;
@@ -115,11 +129,15 @@ h3{
 	font-family: 'Raleway', sans-serif;	
 	color: darkorange;
 	display: grid;
+	cursor: pointer;
 }
 .row#rodape{
-	background:transparent;
-	padding-top:50px;
-	display: flex;
 	position:relative;
-	display: flex;
+    display:flex;
+	align-items: center;
+	justify-content: right;
+	padding-top: 50px;
+	padding-left:80%;
+	
+
 }
